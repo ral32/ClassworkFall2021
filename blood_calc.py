@@ -1,3 +1,6 @@
+print("This is the blood calculator.py module")
+print("It's name is {}". format(__name__))
+
 def interface():
 	print("Blood Calculator")
 	keep_running = True
@@ -18,7 +21,7 @@ def interface():
 	print(choice)
 	return choice
 
-interface()	
+
 
 def HDL_Driver():
 	HDL_value = hdl_input()
@@ -63,7 +66,7 @@ def ldl_analysis():
 	def ldl_output(LDL_value, LDL_answer):
 		print("The LDL value of {} is considered {}". format(LDL_value, LDL_answer))
 
-	
-
+if __name__ == "__main__": #main stores the python name for the current module
+	interface()	
 
 
