@@ -5,12 +5,14 @@ def interface():
 		print("Make a choice")
 		print("9 - Quit")
 		choice = int(input("Make a choice: "))
-		print(type(choice))
+		# print(type(choice))
 		return choice
 		if choice == 9:
 			keep_running = False
 		elif choice == 1:
 			HDL_Driver()
+		elif choice == 2:
+			LDL_Driver()	
 
 
 
