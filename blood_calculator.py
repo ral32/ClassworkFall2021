@@ -1,3 +1,6 @@
+#print("This is the blood_calculator.py module") #started python with this module so given main
+#print("It's name is {}" .format(__name__))
+
 def interface():
     print("Blood Calculator")
     keep_running = True
@@ -67,5 +70,6 @@ def ldl_output(LDL_value, LDL_answer):
     print("The LDL value of {} is considered {}" .format(LDL_value, LDL_answer))
     return 
 
-
-interface() ##cant put this before you define it
+if __name__ == "__main__":
+    interface() ##cant put this before you define it, will not run the interface unless you run it directly. if you import into other files it will not run directly. 
+    #Always use this name main statement and put the functionality you used to start the program inside the if statement block. If your import this it will not run the interface, but will import everything in it to another code
