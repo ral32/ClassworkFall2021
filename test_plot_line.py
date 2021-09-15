@@ -1,11 +1,10 @@
 import pytest
-@pytest.mark.parametrize("answer, expected", [(1,1), (2,2), 3, 3])
+@pytest.mark.parametrize("coord1, coord2, x3, expected", 
+                            [((1,1), (2,2), 3, 3)])
 
-def test_plot_line(answer, expected):
+
+def test_line(coord1, coord2, x3, expected):
     from plot_line import line
-    answer = line((1,1), (2,2), 3)
-    expected = 3
+    answer = line(coord1, coord2, x3)
     assert answer == expected
     
-
-
